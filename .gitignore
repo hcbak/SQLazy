@@ -163,3 +163,4 @@ replay_pid*
 
 # database
 .database/*
+*.csv
