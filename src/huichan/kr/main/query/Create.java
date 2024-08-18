@@ -17,6 +17,8 @@ public class Create {
                     System.out.println(fileDir.mkdirs() ? "데이터베이스가 생성되었습니다." : "이미 존재하는 데이터베이스입니다.");
                     break;
                 case "TABLE":
+                    if(query.length < 4) { System.out.println("컬럼명을 입력해야 테이블이 생성됩니다."); break; }
+
                     if(fileTable.createNewFile()) {System.out.println("테이블이 생성되었습니다.");}
                     else {System.out.println("이미 존재하는 테이블입니다."); break;}
 
