@@ -20,7 +20,7 @@ public class Query {
         long before = System.currentTimeMillis();
         
         switch (this.query[0].toUpperCase()) {
-            case "SHOW": Show.query(this.query[1]); break;
+            case "SHOW": Show.query(this.query[1], this.useDB); break;
             case "CREATE": Create.query(this.query, this.useDB); break;
             case "USE": Use.query(this.query, this); break;
             default:
