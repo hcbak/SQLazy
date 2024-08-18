@@ -23,6 +23,7 @@ public class Query {
             case "SHOW": Show.query(this.query[1], this.useDB); break;
             case "CREATE": Create.query(this.query, this.useDB); break;
             case "USE": Use.query(this.query, this); break;
+            case "INSERT": Insert.query(this.query, this.useDB); break;
             default:
                 System.out.println("SQLazy에서 지원하지 않는 쿼리입니다.");
                 break;

@@ -24,7 +24,7 @@ public class Create {
 
                     for(int i = 3; i < query.length-1; i++) {
                         tableColumn.append(query[i]).append("\t");}
-                    tableColumn.append(query[query.length-1]).append("\n\r");
+                    tableColumn.append(query[query.length-1]).append("\n");
 
                     Writer writer = new FileWriter("database\\" + useDB + "\\" + query[2] + ".csv");
                     writer.write(tableColumn.toString());
